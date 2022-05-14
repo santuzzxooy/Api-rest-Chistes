@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% block body %}
+  
+  <h1>Oops! Parece que no introduciste la palabra correcta</h1>
+  <h3>Las palabras que son aceptadas en el campo de url son: 'chuck' y 'dad'</h3>
+  <a href="{{ url_for('index') }}"><p>Clickea aqui</a> para regresar al inicio</p>
+  
+<!-- {{ url_for('index') }} is a var which returns url of index.html-->
+{% endblock %}
+</body>
+</html>
